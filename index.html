@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta property="og:image" content="./Loaf Preview.png" />
+    <link rel="stylesheet"" href="style.css" stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>🍞Bread</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="recipe-title">Basic Sourdough</h1>
+      <p class="recipe-description">My go-to weekday loaf.</p>
+      <div class="spacer"></div>
+      <div class="ingredient-container">
+        <h3>INGREDIENTS</h3>
+        <hr />
+        <div class="ingredient-list">
+          <div class="ingredient-row">
+            <span class="ingredient-quantity">300g</span>
+            <span class="ingredient-name">White Bread Flour</span>
+            <span class="ingredient-percent inline-button">75%</span>
+          </div>
+          <div class="ingredient-row">
+            <span class="ingredient-quantity">100g</span>
+            <span class="ingredient-name">Whole Wheat Flour</span>
+            <span class="ingredient-percent inline-button">25%</span>
+          </div>
+          <div class="ingredient-row">
+            <span class="ingredient-quantity">300g</span>
+            <span class="ingredient-name">Water</span>
+            <span class="ingredient-percent inline-button">75%</span>
+          </div>
+          <div class="ingredient-row">
+            <span class="ingredient-quantity">8g</span>
+            <span class="ingredient-name">Salt</span>
+            <span class="ingredient-percent inline-button">2%</span>
+          </div>
+          <div class="ingredient-row">
+            <span class="ingredient-quantity">80g</span>
+            <span class="ingredient-name">Levain/Starter</span>
+            <span class="ingredient-percent inline-button">20%</span>
+          </div>
+        </div>
+        <button class="cta-black" id="add-ing-button">ADD INGREDIENT</button>
+      </div>
+      <div class="spacer"></div>
+      <div class="quantity-container">
+        <h3>QUANTITY</h3>
+        <hr />
+        <div class="quantity-box">
+          <div class="num-loaves">
+            <span class="quantity-label">Loaf Quantity: </span>
+            <span class="white-cta selected">1</span>
+            <span class="white-cta">2</span>
+            <span class="white-cta plus">+</span>
+          </div>
+          <div class="size-loaves">
+            <span class="quantity-label loaf-size-label">Loaf Size: </span>
+            <span class="white-cta loaf-mass selected">800g</span>
+            <span class="white-cta loaf-mass">1350g</span>
+            <!-- add additional dough masses here-->
+            <span
+              class="other-dough-mass-container input-box white-cta selected hidden"
+            >
+              <input
+                id="other-loaf-quantity"
+                type="number"
+                inputmode="numeric"
+                placeholder="GRAMS"
+                name="dough-mass"
+                pattern="[0-9]*"
+              /><span id="cta-save-loaf-size">SAVE</span>
+            </span>
+            <span class="white-cta plus" id="other-dough-mass">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="method-container">
+        <h3>METHOD</h3>
+        <hr />
+        <div class="method-list">
+          <!-- Step 1-->
+          <div class="method-step">
+            <span class="method-step-title">BUILD LEVAIN</span>
+            <span class="method-time inline-button">9am</span>
+            <div class="method-step-description">
+              Mix 20g starter with 30g flour and 30g water. Rest 4 hours or
+              until doubled.
+            </div>
+          </div>
+          <!-- step 2 -->
+          <div class="method-step">
+            <span class="method-step-title">AUTOLYZE</span>
+            <span class="method-time inline-button">1pm</span>
+            <div class="method-step-description">
+              Mix 300g white flour and 100g whole wheat flour with 300g water.
+              Mix until fully incorporated, then allow 30-minutes to 2-hours to
+              rest.
+            </div>
+          </div>
+          <!-- step 3 -->
+          <div class="method-step">
+            <span class="method-step-title">INITIAL MIX</span>
+            <span class="method-time inline-button">2pm</span>
+            <div class="method-step-description">
+              Add 80g levain to dough and mix until well incorporated.
+            </div>
+          </div>
+          <!-- step 4 -->
+          <div class="method-step">
+            <span class="method-step-title">FINAL MIX</span>
+            <span class="method-time inline-button">2:30pm</span>
+            <div class="method-step-description">
+              Add 8g salt to dough and mix until well incorporated and gluten is
+              developed.
+            </div>
+          </div>
+          <!-- step 5 -->
+          <div class="method-step">
+            <span class="method-step-title">AUTOLYZE</span>
+            <span class="method-time inline-button">1pm</span>
+            <div class="method-step-description">
+              Mix 300g white flour and 100g whole wheat flour with 300g water.
+              Mix until fully incorporated, then allow 30-minutes to 2-hours to
+              rest.
+            </div>
+          </div>
+          <!-- step 6 -->
+          <div class="method-step">
+            <span class="method-step-title">BULK FERMENTATION</span>
+            <span class="method-time inline-button">2:45pm</span>
+            <div class="method-step-description">
+              Apply 4 coil folds in the first 2 hours, then allow dough to rest
+              for the remaining 2-3 hours.
+            </div>
+          </div>
+          <!-- step 7 -->
+          <div class="method-step">
+            <span class="method-step-title">SHAPE</span>
+            <span class="method-time inline-button">7pm</span>
+            <div class="method-step-description">
+              Turn dough out on counter and pre-shape, then shape as desired.
+              Cold proof in refridgerator.
+            </div>
+          </div>
+          <!-- step 8 -->
+          <div class="method-step">
+            <span class="method-step-title">SCORE AND BAKE</span>
+            <span class="method-time inline-button">Next Day</span>
+            <div class="method-step-description">
+              Use pre-heated dutch oven for maximal dough rise and crust
+              texture. Bake 20 minutes covered, 25-30 minutes un-covered.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Ingredient Overlay -->
+      <div class="add-ingredient-overlay hidden">
+        <div class="add-ingredient-content">
+          <div class="white-cta float-right" id="btn-cancel-ingredient">
+            CANCEL
+          </div>
+          <h1>Ingredient Details</h1>
+          <div class="spacer"></div>
+          <h3>INGREDIENT NAME</h3>
+          <hr />
+          <input type="text" id="addIngName" placeholder="ADD NAME" />
+          <div class="spacer"></div>
+          <h3>QUANTITY (GRAMS)</h3>
+          <hr />
+          <!--<label for="addIngQty">Grams: </label>-->
+          <div class="quantity-modal-options">
+            <input
+              type="number"
+              inputmode="numeric"
+              id="addIngQty"
+              placeholder="GRAMS"
+              name="addIngQty"
+              pattern="[0-9]*"
+            />
+            <input
+              type="number"
+              id="addIngBakersPct"
+              class="ingredient-percent inline-button"
+              placeholder="BAKERS %"
+              name="addIngBakersPct"
+            />
+          </div>
+          <div class="spacer"></div>
+          <h3>INGREDIENT TYPE</h3>
+          <hr />
+          <div class="ingredient-type-box">
+            <span class="white-cta btn-ing-type">FLOUR</span>
+            <span class="white-cta btn-ing-type">WATER</span>
+            <span class="white-cta btn-ing-type">SALT</span>
+            <span class="white-cta btn-ing-type">LEAVEN</span>
+            <span class="white-cta btn-ing-type">SEEDS/DRY</span>
+            <span class="white-cta btn-ing-type">PORRIDGE</span>
+            <span class="white-cta btn-ing-type">+</span>
+          </div>
+          <div class="spacer big"></div>
+          <button class="cta-black" id="cta-add-ingredient">
+            SAVE INGREDIENT
+          </button>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <button class="white-cta hidden" id="cta-delete-ingredient">
+            DELETE INGREDIENT
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

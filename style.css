@@ -1,0 +1,245 @@
+html {
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 2rem 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-top: 1px solid black;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.spacer {
+  height: 10px;
+}
+
+/*** Shared Styles ***/
+
+.float-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.inline-button {
+  display: inline-block;
+  color: #6f6f6f;
+  font-size: 0.8rem;
+  font-family: Monaco;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0.2em 0.3em;
+  margin-left: 0.2rem;
+  border: 1px solid #f1f2f0;
+  border-radius: 3px;
+}
+
+.inline-button:hover {
+  background-color: #f1f2f0;
+}
+
+.inline-button:active {
+  background-color: #dadada;
+  border: 1px solid #dadada;
+}
+
+/*** Ingredients Section ***/
+
+.ingredient-row {
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ingredient-quantity {
+  display: inline-block;
+  width: 3em;
+}
+
+.cta-black {
+  padding: 0.5em 0.9em;
+  font-size: 1rem;
+  color: #fff;
+  background: #000000;
+  border: none;
+  border-radius: 3px;
+}
+
+.cta-black:hover {
+  background-color: #6f6f6f;
+}
+
+/*** Quantity Section ***/
+
+.num-loaves,
+.size-loaves {
+  margin-bottom: 0.5rem;
+}
+
+.quantity-label {
+  margin-right: 0.2em;
+}
+
+.white-cta {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.3em 0.6em;
+  background: #f1f2f0;
+  border: none;
+  border-radius: 3px;
+}
+
+.selected {
+  background: white;
+  border: 1px solid black;
+}
+
+.white-cta:hover {
+  background: white;
+  border: 1px solid black;
+}
+
+.white-cta:active {
+  background: white;
+  border: 1px solid black;
+  background: #f1f2f0;
+}
+
+.other-dough-mass-container {
+  position: relative;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#other-loaf-quantity {
+  font-size: 1rem;
+  width: 8rem;
+}
+
+#cta-save-loaf-size {
+  position: absolute;
+  right: 0;
+  top: 0.2em;
+  margin: 0.1em 0.5em;
+}
+
+.quantity-label {
+  display: inline-block;
+  margin-bottom: 0.8em;
+}
+
+/*** Method Section ***/
+
+.method-step {
+  margin-bottom: 1.5rem;
+}
+
+.method-step-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.method-step-description {
+  margin-top: 0.3rem;
+}
+
+/*** Add/Edit Ingredient Section ***/
+
+.add-ingredient-overlay {
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.btn-ing-type {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.add-ingredient-content {
+  margin: 4rem 1rem;
+}
+
+#btn-cancel-ingredient {
+  margin: 1rem;
+}
+
+.quantity-modal-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  border: none;
+  font-size: 1.2rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input::after {
+  content: 'g';
+}
+
+label {
+  margin-right: 0.2rem;
+}
+
+#addIngQty {
+  width: 4em;
+}
+
+.quantity-label-g {
+  margin-right: 2em;
+}
+
+#addIngBakersPct {
+  width: 13ch;
+  text-align: center;
+}
+
+#cta-delete-ingredient {
+  padding: 0.5em 0.9em;
+  font-size: 1rem;
+}
+
+.big {
+  height: 2rem;
+}
+
+.hidden {
+  display: none;
+}
